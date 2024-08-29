@@ -55,8 +55,7 @@ Ensure you have the following installed:
 
 3. **View results:**
 
-- The results of each run are saved in results.json.
-- The average scores are saved in average.json.
+- The average scores are saved in lighthouse-averages.json
 
 
 
