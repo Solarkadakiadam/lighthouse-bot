@@ -1,4 +1,5 @@
 # Performance Thunderstorm
+
 ## Lighthouse Performance Testing Script
 
 ## Overview
@@ -41,23 +42,32 @@ Ensure you have the following installed:
 
 ## Usage
 
-1. **Configure the script:**
-- Open run-lighthouse.js and set your desired website URL in the url variable.
-
-
-2. **Run the script:**
+1. **Run the script:**
 
    ```bash
    node run-lighthouse.js
    ```
 
-   - This script will run Lighthouse tests, save individual reports, and calculate the average scores.
+   - You will be prompted to enter the URL you want to test.
+   - You will also be asked how many times you want the tests to run (press Enter to default to 10 runs).
 
-3. **View results:**
+2. **View results:**
 
 - The average scores are saved in lighthouse-averages.json
 
+## Example Result
 
+Here’s an example of what the output JSON file might look like:
+
+```json
+{
+  "url": "https://omeravsar.com/",
+  "runs": 20,
+  "performance": "0.92",
+  "accessibility": "0.95",
+  "bestPractices": "1.00",
+  "seo": "1.00"
+}
 
 ## Contact
 
@@ -66,3 +76,4 @@ For questions or feedback, please contact Ömer Avşar at [omeravsaroa@gmail.com
 ## Contributing
 
 Feel free to open issues or submit pull requests to contribute to this project.
+```
