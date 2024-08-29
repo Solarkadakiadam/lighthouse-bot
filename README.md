@@ -1,4 +1,5 @@
-# Lighthouse Performance Testing Script
+# Performance Thunderstorm
+## Lighthouse Performance Testing Script
 
 ## Overview
 
