@@ -65,13 +65,11 @@ To test a website and save results:
 1. Edit `config.json` with your desired URLs.
 2. Execute the script as shown in the usage section.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For questions or feedback, please contact Ömer Avşar at [email@example.com](mailto:email@example.com).
+For questions or feedback, please contact Ömer Avşar at [omeravsaroa@gmail.com](mailto:omeravsaroa@gmail.com).
 
 ## Contributing
 
