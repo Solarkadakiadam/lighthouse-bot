@@ -21,7 +21,7 @@ const askQuestion = (query) => {
 const runLighthouse = (url) => {
   return new Promise((resolve, reject) => {
     exec(
-      `lighthouse ${url} --output json --quiet`,
+      `lighthouse ${url} --output json --quiet --emulated-form-factor mobile`,
       { maxBuffer: 1024 * 1024 * 10 },
       (error, stdout, stderr) => {
         // buffer size is 10MB
@@ -62,15 +62,23 @@ const runLighthouse = (url) => {
   });
 };
 
-// Run Lighthouse multiple times and extract scores
+// Run Lighthouse multiple times concurrently and extract scores
 const runTests = async (url, runs) => {
+  const concurrentRuns = 2; // Number of concurrent runs
   const allScores = [];
 
-  for (let i = 1; i <= runs; i++) {
+  // Run tests in batches of concurrentRuns
+  for (let i = 0; i < Math.ceil(runs / concurrentRuns); i++) {
+    const promises = [];
+    for (let j = 0; j < concurrentRuns && i * concurrentRuns + j < runs; j++) {
+      promises.push(runLighthouse(url));
+    }
     try {
-      console.log(`Running test ${i}/${runs}...`);
-      const scores = await runLighthouse(url);
-      allScores.push(scores);
+      console.log(
+        `Running batch ${i + 1}/${Math.ceil(runs / concurrentRuns)}...`
+      );
+      const scores = await Promise.all(promises);
+      allScores.push(...scores);
     } catch (error) {
       console.error(error);
     }
