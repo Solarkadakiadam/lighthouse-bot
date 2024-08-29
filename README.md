@@ -68,7 +68,7 @@ Here’s an example of what the output JSON file might look like:
   "bestPractices": "1.00",
   "seo": "1.00"
 }
-
+```
 ## Contact
 
 For questions or feedback, please contact Ömer Avşar at [omeravsaroa@gmail.com](mailto:omeravsaroa@gmail.com).
