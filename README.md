@@ -45,7 +45,7 @@ Ensure you have the following installed:
 1. **Run the script:**
 
    ```bash
-   node run-lighthouse.js
+   node lighthouse-bot.js
    ```
 
    - You will be prompted to enter the URL you want to test.
