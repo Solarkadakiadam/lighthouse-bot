@@ -41,29 +41,22 @@ Ensure you have the following installed:
 
 ## Usage
 
-1. **Run the script:**
+1. **Configure the script:**
+-Open run-lighthouse.js and set your desired website URL in the url variable.
+
+
+2. **Run the script:**
 
    ```bash
    node run-lighthouse.js
    ```
 
-   This script will run Lighthouse tests, save individual reports, and calculate the average scores.
+   -This script will run Lighthouse tests, save individual reports, and calculate the average scores.
 
-2. **View results:**
+3. ##View results:##
 
-   - The results of each run are saved in `results.json`.
-   - The average scores are saved in `average.json`.
-
-## Configuration
-
-- **`config.json`**: Customize the URLs and other parameters for your Lighthouse tests.
-
-## Example
-
-To test a website and save results:
-
-1. Edit `config.json` with your desired URLs.
-2. Execute the script as shown in the usage section.
+-The results of each run are saved in results.json.
+-The average scores are saved in average.json.
 
 
 
