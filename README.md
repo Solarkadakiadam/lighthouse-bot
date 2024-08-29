@@ -42,7 +42,7 @@ Ensure you have the following installed:
 ## Usage
 
 1. **Configure the script:**
--Open run-lighthouse.js and set your desired website URL in the url variable.
+Open run-lighthouse.js and set your desired website URL in the url variable.
 
 
 2. **Run the script:**
@@ -53,10 +53,10 @@ Ensure you have the following installed:
 
    -This script will run Lighthouse tests, save individual reports, and calculate the average scores.
 
-3. ##View results:##
+3. **View results:**
 
--The results of each run are saved in results.json.
--The average scores are saved in average.json.
+The results of each run are saved in results.json.
+The average scores are saved in average.json.
 
 
 
