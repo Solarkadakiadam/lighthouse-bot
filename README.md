@@ -51,7 +51,7 @@ Open run-lighthouse.js and set your desired website URL in the url variable.
    node run-lighthouse.js
    ```
 
-   -This script will run Lighthouse tests, save individual reports, and calculate the average scores.
+   - This script will run Lighthouse tests, save individual reports, and calculate the average scores.
 
 3. **View results:**
 
