@@ -77,3 +77,6 @@ For questions or feedback, please contact Ömer Avşar at [omeravsaroa@gmail.com
 ## Contributing
 
 Feel free to open issues or submit pull requests to contribute to this project.
+
+## [Medium Article](https://medium.com/@omeravsaroa/supercharge-your-website-testing-with-the-performance-thunderstorm-script-09c06fec0076)
+
