@@ -64,7 +64,7 @@ const runLighthouse = (url) => {
 
 // Run Lighthouse multiple times concurrently and extract scores
 const runTests = async (url, runs) => {
-  const concurrentRuns = 2; // Number of concurrent runs
+  const concurrentRuns = 3; // Number of concurrent runs
   const allScores = [];
 
   // Run tests in batches of concurrentRuns
