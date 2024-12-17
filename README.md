@@ -28,13 +28,7 @@ Ensure you have the following installed:
    cd lighthouse-bot
    ```
 
-2. **Install dependencies:**
-
-   ```bash
-   npm install
-   ```
-
-3. **Install Lighthouse globally:**
+2. **Install Lighthouse globally:**
 
    ```bash
    npm install -g lighthouse
